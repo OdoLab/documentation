@@ -1,0 +1,13 @@
+#NavBar {
+    background-color: #111216;
+}
+
+#pfp img {
+    width: inherit;
+    height: 12vh;
+}
+
+#pfp span {
+    display: inline-block;
+    text-align: center;
+}

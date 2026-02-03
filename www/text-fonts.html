@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Text Fonts</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <link href="global.css" rel="stylesheet">
+        <link href="header.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="leftSubNavBar.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <link href="text-fonts.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="centralPage">
+            <nav id="NavBar">
+                <div id="pfp">
+                    <img src="logo.odolab.png" alt="&Omacr;do-Lab">
+                    <span>
+                        오도랩<br>
+                        (Ōdo-Lab)
+                    </span>
+                </div>
+            </nav>
+            
+            <nav id="leftSubNavBar">
+                <h4>Programming Languages</h4>
+                <a href="top10-lg.html" class="navSpan">Top 10 Languages</a><br>
+                <a href="lg-types.html" class="navSpan">Languages Types</a><br>
+                <a>Robotics & Languages</a><br>
+                <a>Data Types</a><br>
+
+                <h4>HTML</h4>
+                <a href="html-structure.html" class="navSpan">Html Structure</a><br>
+                <a href="tag-attributes.html" class="navSpan">Tag Attributes</a><br>
+                <a>Head Section</a><br>
+                <a>Block Elements</a><br>
+                <a>Text Elements</a><br>
+                <a>Entities</a><br>
+
+                <h4>CSS</h4>
+                <a href="css-rules.html" class="navSpan">Css Rules</a><br>
+                <a href="text-fonts.html" class="navSpan current">Text Fonts</a><br>
+                <a href="colors.html" class="navSpan">Colors</a><br>
+                <a href="images.html" class="navSpan">Images</a><br>
+                
+                <h4>The Web</h4>
+                <a>Internet</a><br>
+                <a>Protocols</a><br>
+                <a>Networks</a><br>
+                <a>Binary</a><br>
+                <a>WIPO and Control Agencies</a><br>
+
+                <h4>Social Medias</h4>
+                <a>Most Used</a><br>
+                <a>E-Reputation</a><br>
+                <a>Cyberviolance</a><br>
+                <a>Graphs</a><br>
+            </nav>
+
+            <main>
+                <header>
+                        <h1 class="center">CSS - Cascading Style Sheets</h1>
+                </header>
+            
+                <section>
+                    <h2>Fonts on the Web</h2>
+
+                    <p>
+                        Typography plays a major role in readability, accessibility, visual hierarchy (titles v/s parapgraphs),
+                        user experience and design identity. Choosing the right font and spacing improves comprehension and
+                        confort when reading content on a website.<br>
+                        <br>
+                        In this section, we will explore the variety of usefull properties used to stylize fonts on the web 
+                        to master the typography of any web page.
+                    </p>
+
+                    <div class="property" data-name="font-family">
+                        <h3>font-family:</h3>
+                        <p>
+                            Property that specifies the font (or list of fonts) used to display text. If a font is not availabl,
+                            the browser falls back to the next one.<br>
+                        </p>
+                        <h4 class="listTitle">Generic Font Families :</h4>
+                        <ul class="list">
+                            <li><span><strong>Serif</strong> = decorative endings</span></li>
+                            <li><span><strong>Sans-Serif</strong> = without serifs</span></li>
+                            <li><span><strong>Monospace</strong> = all characters have equal width</span></li>
+                            <li><span><strong>Cursive</strong> = handwritten-style</span></li>
+                            <li><span><strong>Fantasy</strong> = decorative (full)</span></li>
+                        </ul>
+                        <p>
+                            Fonts are visual style of text, defining how characters are drawn. They are listed on
+                            <a href="https://fonts.google.com" target="_blank">https://fonts.google.com</a>
+                        </p>
+                    </div>
+
+                    <div class="property" data-name="font-style">
+                        <h3>font-style:</h3>
+                        <p>
+                            Property that controls the slant of the text.
+                        </p>
+                        <h4 class="listTitle">Values :</h4>
+                        <ul class="list">
+                            <li><span><strong>normal</strong> = default display</span></li>
+                            <li><span><strong>italic</strong> = italic font version</span></li>
+                            <li><span><strong>oblique</strong> = slanted text</span></li>
+                            <li><span><strong>inherit</strong> = inherits parent value</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="property" data-name="font-weight">
+                        <h3>font-weight:</h3>
+                        <p>
+                            Property that controls the text thickness (boldness).
+                        </p>
+                        <h4 class="listTitle">Common values :</h4>
+                        <ul class="list">
+                            <li><span><strong>normal</strong></span></li>
+                            <li><span><strong>bold</strong></span></li>
+                            <li><span><strong>100 to 900</strong></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="property" data-name="font-variant">
+                        <h3>font-variant:</h3>
+                        <p>
+                            Property that controls alternative glyph styles.
+                        </p>
+                        <h4 class="listTitle">Common value :</h4>
+                        <ul class="list">
+                            <li><span><strong>small-caps</strong> = lower case letters become smaller uppercase letters</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="property" data-name="text-align">
+                        <h3>text-align:</h3>
+                        <p>
+                            Property that aligns text horizontally.
+                        </p>
+                        <h4 class="listTitle">Values :</h4>
+                        <ul class="list">
+                            <li><span><strong>left</strong></span></li>
+                            <li><span><strong>right</strong></span></li>
+                            <li><span><strong>center</strong></span></li>
+                            <li><span><strong>justify</strong></span></li>
+                            <li><span><strong>inherits</strong></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="property" data-name="text-justify">
+                        <h3>text-justify:</h3>
+                        <p>
+                            Property that controls how spacing is distributed when text is justified.
+                        </p>
+                        <h4 class="listTitle">Values :</h4>
+                        <ul class="list">
+                            <li><span><strong>inter-word</strong></span></li>
+                            <li><span><strong>distribute</strong></span></li>
+                            <li><span><strong>kashida</strong></span></li>
+                            <li><span><strong>inter-ideograph</strong></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="property" data-name="text-decoration">
+                        <h3>text-decoration:</h3>
+                        <p>
+                            Property that adds decorative lines to text.
+                        </p>
+                        <h4 class="listTitle">Values :</h4>
+                        <ul class="list">
+                            <li><span><strong>underline</strong></span></li>
+                            <li><span><strong>overline</strong></span></li>
+                            <li><span><strong>line-through</strong></span></li>
+                            <li><span><strong>none</strong></span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="property" data-name="letter-spacing">
+                        <h3>letter-spacing:</h3>
+                        <p>
+                            Property that controls space between characters. This property is often used
+                            for titles or subtitles. Its value is written with a distance unit (px, %, xh...)
+                        </p>
+                    </div>
+
+
+                    <div class="property" data-name="line-height">
+                        <h3>line-height:</h3>
+                        <p>
+                            Property that controls space between lines of text. This property is used
+                            to improve readability for long text blocks. 
+                            Its value is written with a distance unit (px, %, xh...)
+                        </p>
+                    </div>
+
+                    <div class="property" data-name="text-transform">
+                        <h3>text-transform:</h3>
+                        <p>
+                            Property that changes text casing without modifying HTML..
+                        </p>
+                        <h4 class="listTitle">Values :</h4>
+                        <ul class="list">
+                            <li><span><strong>uppercase</strong></span></li>
+                            <li><span><strong>lowercase</strong></span></li>
+                            <li><span><strong>capitalize</strong></span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="property footP" data-name="font-size">
+                        <h3>font-size:</h3>
+                        <p>
+                            Property that defines the size of the text.
+                            Its value is written using keywords or with a distance unit (px, %, xh...)
+                        </p>
+                    </div>
+                </section>
+
+                <footer>
+                    <p>&COPY;2026 &Omacr;do-Corp Documentation. All rights reserved</p>
+                    <a href="https://www.youtube.com/@%C5%8Ddolab" target="_blank"><img src="logo.ytb.png" alt="Youtube"></a>
+                    <a href="https://www.instagram.com/eth.togeitd/" target="_blank"><img src="logo.insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/debulyaudo-ethan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium" target="_blank"><img src="logo.in.png" alt="LinkedIn"></a>
+                    <a href="" target="_blank"><img src="logo.net.png" alt="Network"></a>
+                    <div id="personalInfos">
+                        <div>
+                            <img src="logo.mail.png" alt="Email Adress">
+                            <span>ethan.debulyaudo@gmail.com</span>
+                        </div>
+                        
+                        <div>
+                            <img src="logo.loc.png" alt="Location">
+                            <span>FR, Rennes Cedex, 35000</span>
+                        </div>
+
+                        <div>
+                            <img src="logo.mob.png" alt="Phone Number">
+                            <span>+33 7 66 65 95 47</span>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

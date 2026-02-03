@@ -1,0 +1,59 @@
+footer {
+    width: 100%;
+    background-color: #111216;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.5fr 0.5fr 0.5fr 2.5fr;
+    margin-top: auto;
+    padding: 2rem 0;
+}
+
+footer > * {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    padding: 2.5% 7%;
+    text-indent: 0;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+#personalInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-self: start;
+}
+
+#personalInfos > div {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#personalInfos img {
+    width: 20px;
+    height: 20px;
+}
+
+footer a p {
+    font-size: xx-small;
+}
+
+.footH3 {
+    margin-top: 6vh;
+}
+
+.footP {
+    margin-bottom: 8vh;
+}

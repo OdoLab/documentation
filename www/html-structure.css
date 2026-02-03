@@ -1,0 +1,25 @@
+section {
+    background-color: #111216;
+    width: 100%;
+    flex: 1;
+}
+
+.doctype {
+    color: rgb(112, 112, 255);
+}
+
+.html {
+    color: rgb(218, 161, 255);
+}
+
+.head {
+    color: rgb(255, 254, 172);
+}
+
+.body {
+    color: rgb(185, 253, 172);
+}
+   
+.indent {
+  margin-left: 2rem;
+}

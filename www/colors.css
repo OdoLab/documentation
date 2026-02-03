@@ -1,0 +1,48 @@
+section {
+    background-color: #111216;
+    width: 100%;
+    flex: 1;
+}
+
+.Blue {
+    color: rgb(130, 130, 253);
+}
+
+.Red {
+    color: rgb(250, 137, 137);
+}
+
+.Green {
+    color: rgb(131, 255, 131);
+}
+
+.Yellow {
+    color: rgb(252, 252, 106);
+}
+
+.Black {
+    color: whitesmoke;
+}
+
+.rainbow {
+  background: linear-gradient(to right, red, orange, yellow, green, rgb(89, 89, 255), rgb(183, 82, 255), violet);
+  background-clip: text;      /* Standard, Firefox now supports */
+  -webkit-background-clip: text; /* Chrome, Safari, Edge */
+  color: transparent;         /* Makes the letters show the gradient */
+}
+
+#decimal-conversion {
+    height: 40vh;
+    width: auto;
+    margin: 2vh 4%;
+}
+
+.noIndent {
+    text-indent: 0;
+}
+
+#hue {
+    height: 20vh;
+    width: auto;
+    margin: 2vh 8%;
+}

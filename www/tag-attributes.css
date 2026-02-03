@@ -1,0 +1,25 @@
+section {
+    background-color: #111216;
+    width: 100%;
+    flex: 1;
+}
+
+.attribute {
+    color: rgb(23, 163, 34);
+    font-weight: bold;
+}
+
+.value {
+    color: rgb(0, 79, 124);
+    font-weight: bold;
+}
+
+section ul {
+    margin-top: 1.5vh;
+    margin-bottom: 4vh;
+
+}
+
+section ul li {
+    margin: 0.15vh 4vh;
+}
