@@ -8,7 +8,7 @@ wikipedia-looking website.
 https://OdoLab.github.io/documentation/
 
 ## Screenshot
-![Example of Page]()
+![Example of Page](www/images/illustration/screenshot.png)
 
 ## Technologies Used
 
@@ -24,4 +24,14 @@ https://OdoLab.github.io/documentation/
 
 ## Changelog
 
-###
+### v0.8 
+
+- Added new content to the navigation bar
+- New : CSS Colors!
+- New : CSS Images!
+
+#### v0.8.1 Changelog
+
+- Fixed the file hierarchy
+- Fixed flexbox layout bug
+
