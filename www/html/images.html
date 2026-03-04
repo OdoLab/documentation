@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>CSS - Images</title>
 
         <meta charset="UTF-8">
         <meta name="description" content="">
@@ -10,13 +10,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         
+       
         <link href="../css/global.css" rel="stylesheet">
         <link href="../css/header.css" rel="stylesheet">
         <link href="../css/navBar.css" rel="stylesheet">
         <link href="../css/leftSubNavBar.css" rel="stylesheet">
         <link href="../css/main.css" rel="stylesheet">
         <link href="../css/footer.css" rel="stylesheet">
-        <link href="../css/" rel="stylesheet">
+        <link href="../css/images.css" rel="stylesheet">
     </head>
 
     <body>
@@ -50,7 +51,7 @@
                 <a href="css-rules.html" class="navSpan">Css Rules</a><br>
                 <a href="text-fonts.html" class="navSpan">Text Fonts</a><br>
                 <a href="colors.html" class="navSpan">Colors</a><br>
-                <a href="images.html" class="navSpan">Images</a><br>
+                <a href="images.html" class="navSpan current">Images</a><br>
                 
                 <h4>The Web</h4>
                 <a>Internet</a><br>
@@ -68,10 +69,46 @@
 
             <main>
                 <header>
-                        <h1 class="center"></h1>
+                        <h1 class="center">CSS - Cascading Style Sheets</h1>
                 </header>
             
                 <section>
+                    <h2>Images and their Borders</h2>
+
+                    <p>
+                        Images in HTML are visual ressource displayed on a web page using the <img> tag. Another element
+                        called "border" is a visual line drawn around any element to emphasize, separate, or decorate content.<br>
+                        <br>
+                        Borders are important because they add visual impact and effects to elements like images.
+                    </p>
+
+                    <h3>&lt;img /&gt;</h3>
+
+                    <p class="noIndent">
+                        The image tag is used to display an image in a web page. It has two "required" attributes : <br>
+                        <br>
+                        • <span class="attribute">src=</span> → Path or URL to the image file<br>
+                        • <span class="attribute">alt=</span> → Alternative text describing the image<br>
+                        <br>
+                        Filling the alt attribute is important as it improve accessibility, is used for SEO, and as 
+                        fallback when the image cannot be loaded.
+                    </p>
+
+                    <h3>border:</h3>
+
+                    <p class="footP noIndent">
+                        Shortand CSS property used to define border width, border style and border color.<br>
+                        <br>
+                        → ex: <span class="property">border</span>: <span class="value">1px dashed red</span>;<br>
+                        <br>
+                        Common style value :<br>
+                        <br>
+                        • <span class="value">solid</span>; → single line<br>
+                        • <span class="value">dashed</span>; → broken line<br>
+                        • <span class="value">dotted</span>; → series of dots<br>
+                        • <span class="value">double</span>; → two parallel lines<br>
+                        • <span class="value">none</span>; → no border
+                    </p>
                 </section>
 
                 <footer>

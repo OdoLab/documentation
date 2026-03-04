@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Colors</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <link href="../css/global.css" rel="stylesheet">
+        <link href="../css/header.css" rel="stylesheet">
+        <link href="../css/navBar.css" rel="stylesheet">
+        <link href="../css/leftSubNavBar.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/footer.css" rel="stylesheet">
+        <link href="../css/colors.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="centralPage">
+            <nav id="NavBar">
+                <div id="pfp">
+                    <img src="../images/logo/logo.odolab.png" alt="&Omacr;do-Lab">
+                    <span>
+                        오도랩<br>
+                        (Ōdo-Lab)
+                    </span>
+                </div>
+            </nav>
+            
+            <nav id="leftSubNavBar">
+                <h4>Programming Languages</h4>
+                <a href="top10-lg.html" class="navSpan">Top 10 Languages</a><br>
+                <a href="lg-types.html" class="navSpan">Languages Types</a><br>
+                <a>Robotics & Languages</a><br>
+                <a>Data Types</a><br>
+
+                <h4>HTML</h4>
+                <a href="html-structure.html" class="navSpan">Html Structure</a><br>
+                <a href="tag-attributes.html" class="navSpan">Tag Attributes</a><br>
+                <a>Head Section</a><br>
+                <a>Block Elements</a><br>
+                <a>Text Elements</a><br>
+                <a>Entities</a><br>
+
+                <h4>CSS</h4>
+                <a href="css-rules.html" class="navSpan">Css Rules</a><br>
+                <a href="text-fonts.html" class="navSpan">Text Fonts</a><br>
+                <a href="colors.html" class="navSpan current">Colors</a><br>
+                <a href="images.html" class="navSpan">Images</a><br>
+                
+                <h4>The Web</h4>
+                <a>Internet</a><br>
+                <a>Protocols</a><br>
+                <a>Networks</a><br>
+                <a>Binary</a><br>
+                <a>WIPO and Control Agencies</a><br>
+
+                <h4>Social Medias</h4>
+                <a>Most Used</a><br>
+                <a>E-Reputation</a><br>
+                <a>Cyberviolance</a><br>
+                <a>Graphs</a><br>
+            </nav>
+
+            <main>
+                <header>
+                        <h1 class="center">CSS - Cascading Style Sheets</h1>
+                </header>
+            
+                <section>
+                    <h2>Colors - Hexadecimal, RGBA and HSLA</h2>
+
+                    <p>
+                        In CSS, colors are values used to define the chromatic appearance of an element 
+                        (text, background, border, shadow...)<br>
+                        <br>
+                        Several methods can be used to represent a color, but they all give access to the
+                        same range of colors.
+                    </p>
+
+                    <h3>1. Hexadecimal Colors</h3>
+
+                    <p>
+                        The first method is using the hexadecimal color system : a color representation based on 
+                        the hecadecimal number system (base 16), mainly used in HTML and CSS.<br>
+                        <br>
+                        An hexadecimal color is written with a # followed by 6 decimal and hexa characters (0, 1, 2,
+                        3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). E.g., #07E54A<br>
+                        <br>
+                        The hexadecimal color is using the RGB system, meaning it has 3 channel : Red, Green, and Blue.
+                        Each channel own 2 hexadecimal character : #<span class="Red">00</span><span class="Green">00</span><span class="Blue">00</span><br>
+                        <br>
+                        Hexadecimals can be simplified if the two characters of each channel are similar : <br>
+                        #<span class="Red">00</span><span class="Green">00</span><span class="Blue">00</span> = #<span class="Red">0</span><span class="Green">0</span><span class="Blue">0</span><br>
+                        #<span class="Red">22</span><span class="Green">FF</span><span class="Blue">CC</span> = #<span class="Red">2</span><span class="Green">F</span><span class="Blue">C</span><br>
+                        #<span class="Red">44</span><span class="Green">44</span><span class="Blue">AA</span> = #<span class="Red">4</span><span class="Green">4</span><span class="Blue">A</span><br>
+                        <br>
+                    </p>
+                    <h4>Decimal -> Binary -> Hexadecimal Conversion :</h4>
+                    <img id="decimal-conversion" src="../images/illustration/decimal-conversion.PNG" alt="Decimal -> Binary -> Hexadecimal conversion table">
+                
+                    <h3>2. RGBA Colors</h3>
+                    
+                    <p>
+                        The second method is the RGBA, a color model based on the additive synthesis of light, so by combining light sources.<br>
+                        It uses four channels (4 bytes) written using the value "rgba(<span class="Red">Red</span>, <span class="Green">Green</span>, <span class="Blue">Blue</span>, <span class="Black">Alpha</span>)"
+                        <br>
+                        Each channel ranges from 0 to 255, however in CSS, the alpha channel is ranged between 0 (fully transparent) and 1 (fully opaque).
+                        Here are few examples of color written using the RGBA system :<br>
+                        <br>
+                        White = rgba(<span class="Red">255</span>, <span class="Green">255</span>, <span class="Blue">255</span>, <span class="Black">1</span>)<br>
+                        Black = rgba(<span class="Red">0</span>, <span class="Green">0</span>, <span class="Blue">0</span>, <span class="Black">1</span>)<br>
+                        Red = rgba(<span class="Red">0</span>, <span class="Green">0</span>, <span class="Blue">0</span>, <span class="Black">1</span>)<br>
+                        Green = rgba(<span class="Red">0</span>, <span class="Green">255</span>, <span class="Blue">0</span>, <span class="Black">1</span>)<br>
+                        Blue = rgba(<span class="Red">255</span>, <span class="Green">0</span>, <span class="Blue">255</span>, <span class="Black">1</span>)<br>
+                        <br>
+                        If the Aplha Channel is equal to 1, the rgba() form can be shortened in rgb(red, green, blue) : without the alpha channel, as 1 is the default Aplha value
+                    </p>
+
+                    <h3>3. HSLA Colors</h3>
+
+                    <p>
+                        The third method is the HSLA, a color model based on human perception, so by interpreting colors as angles.<br>
+                        It uses four channel (4 bytes) written using the value "hsla(<span class="rainbow">hue</span>, <span class="Red">saturation</span>, <span class="Yellow">lightness</span>, <span class="Black">Alpha</span>)"<br>
+                        <br>
+                        <strong>hue</strong> → express colors as angles from 0° to 360°
+                    </p>
+
+                    <img id="hue" src="../images/illustration/hue-angles.png" alt="Hue Angle Color Values Chart">
+
+                    <p class="noIndent">
+                        <strong>saturation</strong> → express color intensity as percentage (0% → 100%)<br>
+                        0% = Grayscale<br>
+                        <br>
+                        <strong>lightness</strong> → express brightness as percentage (0% → 100%)<br>
+                        0% = Black<br>
+                        50% = Normal Color<br>
+                        100% = White<br>
+                        <br>
+                        <strong>alpha</strong> → express transparancy as a range betzeen 0 (fully transparant) to 1 (fully opaque)
+                    </p>
+                    
+                    <h3>4. Named Colors</h3>
+
+                    <p>
+                        The last method consist in using predefined CSS colors as value. Indeed, CSS has predefined color keywords
+                        but the existing colors in this method are only the most popular and basics one as :<br>
+                        "black - white - red - orange - green - cyan - turquoise - blue - yellow - pink - etc..."
+                    </p>
+                </section>
+
+                <footer>
+                    <p>&COPY;2026 &Omacr;do-Corp Documentation. All rights reserved</p>
+                    <a href="https://www.youtube.com/@%C5%8Ddolab" target="_blank"><img src="../images/logo/logo.ytb.png" alt="Youtube"></a>
+                    <a href="https://www.instagram.com/eth.togeitd/" target="_blank"><img src="../images/logo/logo.insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/debulyaudo-ethan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium" target="_blank"><img src="../images/logo/logo.in.png" alt="LinkedIn"></a>
+                    <a href="" target="_blank"><img src="../images/logo/logo.net.png" alt="Network"></a>
+                    <div id="personalInfos">
+                        <div>
+                            <img src="../images/logo/logo.mail.png" alt="Email Adress">
+                            <span>ethan.debulyaudo@gmail.com</span>
+                        </div>
+                        
+                        <div>
+                            <img src="../images/logo/logo.loc.png" alt="Location">
+                            <span>FR, Rennes Cedex, 35000</span>
+                        </div>
+
+                        <div>
+                            <img src="../images/logo/logo.mob.png" alt="Phone Number">
+                            <span>+33 7 66 65 95 47</span>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

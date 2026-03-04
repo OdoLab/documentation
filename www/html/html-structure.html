@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>HTML - Structure</title>
 
         <meta charset="UTF-8">
         <meta name="description" content="">
@@ -16,7 +16,7 @@
         <link href="../css/leftSubNavBar.css" rel="stylesheet">
         <link href="../css/main.css" rel="stylesheet">
         <link href="../css/footer.css" rel="stylesheet">
-        <link href="../css/" rel="stylesheet">
+        <link href="../css/html-structure.css" rel="stylesheet">
     </head>
 
     <body>
@@ -39,7 +39,7 @@
                 <a>Data Types</a><br>
 
                 <h4>HTML</h4>
-                <a href="html-structure.html" class="navSpan">Html Structure</a><br>
+                <a href="html-structure.html" class="navSpan current">Html Structure</a><br>
                 <a href="tag-attributes.html" class="navSpan">Tag Attributes</a><br>
                 <a>Head Section</a><br>
                 <a>Block Elements</a><br>
@@ -68,10 +68,67 @@
 
             <main>
                 <header>
-                        <h1 class="center"></h1>
+                        <h1 class="center">HTML - HyperText Markup Language</h1>
                 </header>
             
                 <section>
+                    <h2>How is HTML Structured?</h2>
+
+                    <p>
+                        HTML or HyperText Markup Language is a markup language used to structure and display context on
+                        web pages. It uses <strong>tags</strong> to organize and define elements.<br>
+                        <br>
+                        Tags are the special markers in HTML, written using angle brackets &lt; &gt;.<br>
+                        There are two types of tags : <strong>tag pairs</strong> (e.g., &lt;p&gt;&lt;/p&gt;, and <strong>self-closing tags</strong>
+                        (e.g., &lt;br /&gt;).<br>
+                        <br>
+                        Tags follow the <strong>nesting principle</strong> : you can place any tags inside other tag pairs, aslong as they dont overlap or cross
+                        each other.
+                    </p>
+
+                    <h3>The Doctype and Page Structure</h3>
+
+                    <p>
+                        A doctype is a declaration that tells the browser which version of html is used. 
+                        In HTML, page follows a precise structure based on the Doctype :<br>
+                        <br>
+                        <span class="doctype">&lt;!DOCTYPE html&gt;</span><br>
+                        <br>
+                        <span class="html">&lt;html&gt;</span><br>
+                        <span class="head indent">&lt;head&gt;&lt;/head&gt;</span><br>
+                        <br>
+                        <span class="body indent">&lt;/body&gt;&lt;/body&gt;</span><br>
+                        <span class="html">&lt;/html&gt;</span><br>
+                        <br>
+                        An HTML page always follows this order : doctype → html → head → body. This structure is essential for
+                        correct page display.
+                    </p>
+
+                    <h3>&lt;!DOCTYPE html&gt;</h3>
+
+                    <p> 
+                        This line indicates to the browser that the page uses HTML5, the latest major version of HTML used
+                        to build modern web pages.
+                    </p>
+
+                    <h3>&lt;html&gt;&lt;/html&gt;</h3>
+
+                    <p> 
+                        This tag pair contains the entire web page and defines the document as HTML. It's the root element
+                        that wraps all the content of an HTML document.
+                    </p>
+
+                    <h3>&lt;head&gt;&lt;/head&gt;</h3>
+
+                    <p> 
+                        A section that contains metadata and instructions for the browser. They are loaded before the web page.
+                    </p>
+
+                    <h3>&lt;/body&gt;&lt;/body&gt;</h3>
+
+                    <p class="footP"> 
+                        A section that contains the content displayed on the screen.
+                    </p>
                 </section>
 
                 <footer>
