@@ -10,11 +10,6 @@ https://OdoLab.github.io/documentation/
 ## Screenshot
 ![Example of Page](www/images/illustration/screenshot.png)
 
-## Technologies Used
-
-- HTML5
-- CSS3
-
 ## How to Run
 
 1. Download or clone the repository
