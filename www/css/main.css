@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 3fr 12fr;
 }
+#centralPageMenu {
+    display: grid;
+    grid-template-columns: 3fr 12fr;
+}
 
 main, main section {
     flex: 1;

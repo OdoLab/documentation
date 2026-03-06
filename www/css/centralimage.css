@@ -1,0 +1,20 @@
+#centralimage {
+    height: 35vh;
+    width: auto;
+    margin: 20vh 30vw 0 31vw;
+}
+
+section {
+    background-color: #111216;
+    width: 100%;
+    flex: 1;
+}
+
+
+div#buttondiv {
+    margin-left: 37vw;
+    margin-top: 2vh;
+    height: 4vh;
+    width: 6vw;
+    padding: 0.5vh 1.35vw;
+}
