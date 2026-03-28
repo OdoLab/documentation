@@ -1,9 +1,0 @@
-section {
-    background-color: #111216;
-    width: 100%;
-    flex: 1;
-}
-
-section ul li {
-    margin: 0.25vh 4vh;
-}

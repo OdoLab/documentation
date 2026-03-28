@@ -1,0 +1,57 @@
+@use './variables' as var;
+
+footer {
+  width: 100%;
+  height: calc(100vh / 6vh);
+  background-color: var.$primary-color;
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 0.5fr 0.5fr 0.5fr 2.5fr;
+  margin-top: auto;
+  padding: 2rem 0;
+
+  > * {
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    padding: 2.5% 7%;
+    text-indent: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    p {
+      font-size: xx-small;
+    }
+  }
+
+  #personalInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-self: start;
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .footH3 { margin-top: 6vh; }
+  .footP { margin-bottom: 8vh; }
+}

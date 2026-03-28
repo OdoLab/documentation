@@ -1,0 +1,46 @@
+@use './variables' as var;
+
+html, body {
+  height: 100%;
+  font-family: "Comic Neue", cursive;
+  color: var.$text-color;
+  display: flex;
+  flex-direction: column;
+}
+
+strong {
+  color: var.$text-color-strong;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &.current {
+    font-weight: bold;
+    color: rgb(223, 223, 223);
+  }
+
+  &:hover { color: var.$link-hover; }
+}
+
+h2 {
+  margin: 4vh 1.5vh; 
+}
+
+h3 { 
+  margin: 6vh 1.5vh; 
+  margin-bottom: 2vh;
+}
+
+h4 {
+  margin: 3vh 1vh;
+  margin-left: 1rem;
+  margin-bottom: 1vh;
+}
+
+p {
+  text-indent: 2rem;
+  max-width: 800px;
+  padding-left: 1rem;
+}

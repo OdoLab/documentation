@@ -1,0 +1,24 @@
+@use './variables' as var;
+
+#centralPage {
+  display: grid;
+  grid-template-columns: 1fr 3fr 12fr;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
+  scrollbar-width: none;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var.$primary-color;
+    width: 100%;
+  }
+}

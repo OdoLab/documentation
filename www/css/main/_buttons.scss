@@ -1,0 +1,22 @@
+@use './variables' as var;
+
+#button, #title {
+  text-align: center;
+
+  strong { color: #111216; }
+}
+
+#buttondiv {
+  height: 4vh;
+  width: 4vw;
+  background-color: var.$text-color;
+  font-weight: bold;
+  border-radius: 20%;
+
+  margin-left: 1vw;
+  margin-top: 73vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
