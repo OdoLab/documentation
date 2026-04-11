@@ -7,9 +7,4 @@ wikipedia-looking website.
 ### Live Demo
 https://OdoLab.github.io/documentation/
 
-## How to Run
-
-1. Download or clone the repository
-2. Open index.html in your browser
-
 ## Version : v0.9.3
