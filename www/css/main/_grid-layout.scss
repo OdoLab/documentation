@@ -3,7 +3,11 @@
 #centralPage {
   display: grid;
   grid-template-columns: 1fr 3fr 12fr;
+  grid-template-rows: 100vh;
   height: 100vh;
+  overflow: hidden;
+  align-items: start;
+  flex-shrink: 0;
 }
 
 main {

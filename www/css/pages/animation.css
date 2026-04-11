@@ -1,0 +1,152 @@
+.container {
+    height: 60vh;
+    width: 70%;
+    margin: 6vh 5%;
+    box-shadow: inset 0 0 0 0.5px #808080;
+}
+
+.flip {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#card { 
+    cursor: pointer;
+}
+
+.card {
+    width: 225px;
+    height: 310px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-out;
+}
+
+.back, .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg)
+}
+
+.card.hover:hover {
+    transform: rotateY(180deg);  
+}
+
+
+.area1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.area2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.p.area1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.p.area2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.p {
+    padding: 0;
+    text-indent: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+@keyframes swing {
+    0% { transform: translateX(100px) rotate(-10deg); }
+    50% { transform: translateX(-100px) rotate(10deg); }
+    100% { transform: translateX(100px) rotate(-10deg); }
+}
+
+
+.swinging {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.clock {
+    height: 80px;
+    width: 270px;
+    transform-origin: top center;
+    margin-top: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+
+    animation: swing 2s ease-in-out infinite;
+}
+
+.clock img {
+    height: 150px;
+    width: auto;
+}
+
+.clock span {
+	position: absolute;
+	color: black;
+	z-index: 1000;
+}
+
+.swinging button {
+    height: 8vh;
+    width: 8vh;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+.personage {
+	background-image: url("../../images/illustration/nordSee.jpg");
+    background-size: cover;
+	position: relative;
+}
+
+
+@keyframes forward {
+    from { background-position: 0 -476.25px; }
+    to   { background-position: -1142px -476.25px; }
+}
+@keyframes backward {
+    from { background-position: 0 0; }
+    to   { background-position: -1142px 0; }
+}
+@keyframes left {
+    from { background-position: 0 -158.75px; }
+    to   { background-position: -1142px -158.75px; }
+}
+@keyframes right {
+    from { background-position: 0 -317.5px; }
+    to   { background-position: -1142px -317.5px; }
+}
+
+.sprite {
+    width: 95.17px;
+    height: 158.75px;
+    background: url('../../images/illustration/personnage.png') no-repeat;
+    position: absolute;
+    animation: forward 1s steps(12) infinite;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML - Attributes</title>
+        <title>CSS - Animation</title>
 
         <meta charset="UTF-8">
         <meta name="description" content="">
@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         
         <link href="../css/main.css" rel="stylesheet">
-        <link href="../css/pages/tag-attributes.css" rel="stylesheet">
+        <link href="../css/pages/animation.css" rel="stylesheet">
     </head>
 
     <body>
@@ -38,7 +38,7 @@
 
                 <h4>HTML</h4>
                 <a href="html-structure.html" class="navSpan">Html Structure</a><br>
-                <a href="tag-attributes.html" class="navSpan current">Tag Attributes</a><br>
+                <a href="tag-attributes.html" class="navSpan">Tag Attributes</a><br>
                 <a href="metadatas.html" class="navSpan">Metadatas</a><br>
                 <a href="link-css-js.html" class="navSpan">Link CSS/JS</a><br>
                 <a href="block-element.html" class="navSpan">Block Elements</a><br>
@@ -54,7 +54,7 @@
                 <a href="text-fonts.html" class="navSpan">Text Fonts</a><br>
                 <a href="colors.html" class="navSpan">Colors</a><br>
                 <a href="images.html" class="navSpan">Images</a><br>
-                <a href="animation.html" class="navSpan">Animation</a><br>
+                <a href="animation.html" class="navSpan current">Animation</a><br>
 
                 <h4>JavaScript</h4>
                 
@@ -76,39 +76,45 @@
 
             <main>
                 <header>
-                        <h1 class="center">HTML - HyperText Markup Language</h1>
+                    <h1 class="center">CSS - Cascading Style Sheets</h1>
                 </header>
             
                 <section>
-                    <h2>What's an Attribute?</h2>
-
+                    <h2>Flip Card Animations</h2>
                     <p>
-                        Attributes are settings, values or information written inside a tag to give additional
-                        information about an HTML element.<br>
-                        <br>
-                        &lt;tag <span class="attribute">atttribute=</span><span class="value">"value"</span>&gt;<br>
-                        <br>
-                        Some of the most common attributes are <span class="attribute">class=</span> and <span class="attribute">id=</span> which are used to assign a class or an id to
-                        an element. These are often used to link CSS styles to specific elements on a page.
+                        CSS can creates 3D structures. These structures can then be transformed by rotation, translation, scaling
+                        and skewing in three-dimensional space using CSS or JavaScript. They are mainly used for card flip effects, dice, interactive UI
+                        components and visual animations. Here are two examples of card flip effects, the first one uses CSS,
+                        the second one uses JavaScript.
                     </p>
-
-                    <h3>The 8 all-purpose Attributes :</h3>
-
-                    <ul>
-                        <li><span class="attribute">id=</span><span>: gives a unique identifier to an HTML element</span> </li>
-                        <li><span class="attribute">class=</span><span>: assigns one or more classes to an element for styling or selection</span></li>
-                        <li><span class="attribute">href=</span><span>: specifies the destination URL of a link</span></li>
-                        <li><span class="attribute">src=</span><span>: defines the source file of an element</span></li>
-                        <li><span class="attribute">alt=</span><span>: provides alternative text for images</span></li>
-                        <li><span class="attribute">type=</span><span>: defines the type of behavour of an element</span></li>
-                        <li><span class="attribute">value=</span><span>: sets the value of form elements like inputs or buttons</span></li>
-                        <li><span class="attribute">style=</span><span>: applies inline CSS styles directly to an element</span></li>
-                    </ul>
-
-                    <p>
-                        Attribtues values vary widely depending on the attribute. In most cases, they are URLs, keywords, classes,
-                        IDs, or free-form text.
-                    </p>
+                    <div class="flip container">
+                        <div class="card hover area1">
+                            <img src="../images/illustration/front1.PNG" class="front">
+                            <img src="../images/illustration/back.png" class="back">
+                        </div>
+                        <p class="p area1">Hover Me!</p>
+                        <div id="card" class="card area2" onclick="flip()">
+                            <img src="../images/illustration/back.png" class="front">
+                            <img src="../images/illustration/front2.PNG" class="back">
+                        </div>
+                        <p class="p area2">Click Me!</p>
+                    </div>
+                    
+					<h2>Swinging Clock</h2>
+                    <p>CSS allows elements to change properties smoothly over time using transitions or animations. In this example, we can observe the animation of a swinging clock.</p>
+                    <div class="swinging container">
+                        <div class="clock">
+							<img src="../images/illustration/clock.png">
+							<span></span>
+						</div>
+                        <button onclick="stopTime()">❚❚</button>
+                    </div>
+                    
+					<h2>Walking Personnage</h2>
+                    <p></p>
+                    <div class="personage container">
+						<div class="sprite"></div>
+                    </div>
                 </section>
 
                 <footer>
@@ -129,12 +135,14 @@
                         </div>
 
                         <div>
-                            <img src=../images/logo/logo.mob.png" alt="Phone Number">
+                            <img src="../images/logo/logo.mob.png" alt="Phone Number">
                             <span>+33 7 66 65 95 47</span>
                         </div>
                     </div>
                 </footer>
             </main>
         </div>
+
+        <script src="../js/animation.js"></script>
     </body>
 </html>

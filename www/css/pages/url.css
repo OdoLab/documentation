@@ -1,0 +1,31 @@
+#url {
+    height: 28vh;
+    width: 30vw;
+    margin: 3%;
+}
+
+#padlock {
+    width: 20vw;
+    height: auto;
+    margin: 3%;
+}
+
+.protocol {
+    color: rgb(0, 79, 168);
+}
+
+.domain {
+    color: rgb(201, 154, 0);
+}
+
+.extension {
+    color: rgb(51, 83, 121);
+}
+
+.path {
+    color: rgb(0, 180, 171);
+}
+
+#p {
+    margin-bottom: 1.5rem;
+}
