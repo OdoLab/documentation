@@ -7,4 +7,4 @@ wikipedia-looking website.
 ### Live Demo
 https://OdoLab.github.io/documentation/
 
-## Version : v0.9.3
+## Version : v1
